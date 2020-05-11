@@ -6,3 +6,17 @@
 //bunnyEars2(0) → 0
 //bunnyEars2(1) → 2
 //bunnyEars2(2) → 5
+public int bunnyEars2(int bunnies) {
+  if(bunnies == 0){
+    return 0;
+  }
+  if(bunnies % 2 == 1)
+		return 2 + bunnyEars2(bunnies-1);
+	return 3 + bunnyEars2(bunnies-1);
+}
+
+
+
+
+
+
